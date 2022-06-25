@@ -43,9 +43,18 @@ body {
   background-color: var(--main-bg-cl);
 }
 
-ul {
+ul, ol {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
@@ -54,6 +63,10 @@ a {
 
 .container {
   outline: 1px solid red;
+  width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -188,27 +201,59 @@ a {
 }
 
 /* HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 77px;
+}
+
 
 .header-nav {
   font-size: 16px;
   line-height: 1.19;
   color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+
 }
 
 .header-item-link {
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-txt-cl);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: block;
 }
 
 /* HERO */
+.hero-container {
+  display: flex;
+  gap: 86px;
+  
+}
+.hero-content {
+  width: 574px;
+}
 
 .hero-description {
   font-size: 16px;
   line-height: 1.25;
   color: var(--primary-txt-cl);
-  max-width: 320px;
+  width: 320px;
   margin-bottom: 36px;
+
+}
+
+.hero-description:last-of-type {
+  margin-bottom: 110px;
+}
+
+.hero-wrapper {
+  margin-left: 104px;
 }
 
 .hero-title {
@@ -218,8 +263,12 @@ a {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--title-txt-cl);
+  margin-bottom: 60px;
+  
 }
-
+.hero-image {
+  margin-right: -100px;
+}
 /* DESIGN */
 
 /* BENEFITS */
