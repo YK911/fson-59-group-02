@@ -270,6 +270,32 @@ a {
   margin-right: -100px;
 }
 /* DESIGN */
+.design-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-image {
+  margin-left: -104px;
+}
+
+.design-wrapper{
+  width: 570px;
+}
+
+.design-title {
+  margin-bottom: 50px;
+}
+
+.design-item {
+  margin-bottom: 40px;
+}
+
+.design-item:last-child {
+  margin-bottom: 0;
+}
+
+
 
 /* BENEFITS */
 
